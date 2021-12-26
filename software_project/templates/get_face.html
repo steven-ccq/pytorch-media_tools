@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+
+        <meta name="author" content="Muhammad Morshed">
+
+        <title>face capture</title>
+
+		<!-- Mobile Specific Meta
+		================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Favicon -->
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="/static/plugins/themefisher-font/style.css">
+		<!-- bootstrap.min css -->
+        <link rel="stylesheet" href="/static/plugins/bootstrap/dist/css/bootstrap.min.css">
+		<!-- Animate.css -->
+        <link rel="stylesheet" href="/static/plugins/animate-css/animate.css">
+        <!-- Magnific popup css -->
+        <link rel="stylesheet" href="/static/plugins/magnific-popup/dist/magnific-popup.css">
+		<!-- Slick Carousel -->
+        <link rel="stylesheet" href="/static/plugins/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="/static/plugins/slick-carousel/slick/slick-theme.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="/static/css/style.css">
+
+
+    </head>
+
+    <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+ <!--
+Welcome Slider
+==================================== -->
+<section class="hero-area">
+	<div class="block">
+		<div class="video-button">
+			<i class="tf-ion-play"></i>
+
+		</div>
+		<h1>Face Capture</h1>
+{#		<p>Capture the face from the video and save as pictures for you</p>#}
+        <p>choose the frequency of capture</p>
+        <ul class="list-inline">
+            <button type="button" class="btn btn-transparent" id="btn_low" onclick="btn_click1()">low</button>
+            <button type="button" class="btn btn-transparent" id="btn_middle" onclick="btn_click2()">middle</button>
+            <button type="button" class="btn btn-transparent" id="btn_high" onclick="btn_click3()">high</button>
+        </ul>
+        <form method="post" action="{% url 'media_separator:get_face' %}" enctype="multipart/form-data" id="upload_form">
+            {% csrf_token %}
+            <input type="file" name="video" id="video" style="display: none">
+        </form>
+        <button type="button" class="btn btn-transparent" id="upload_btn" onclick="upload()">upload video</button>
+	</div>
+</section>
+
+ <!--
+  Fixed Navigation
+  ==================================== -->
+
+  <!--
+  End Fixed Navigation
+  ==================================== -->
+
+<!--
+		Start About Section
+		==================================== -->
+
+
+<!-- Start Portfolio Section
+		=========================================== -->
+
+
+
+<!--
+Start Counter Section
+==================================== -->
+
+
+
+<!-- Start Pricing section
+		=========================================== -->
+
+
+
+<!-- Start Testimonial
+		=========================================== -->
+
+
+
+
+<!--
+Start Blog Section
+=========================================== -->
+
+
+
+
+<!-- Srart Contact Us
+=========================================== -->
+
+</section> <!-- end section -->
+
+
+
+
+
+		<!-- end Contact Area
+		========================================== -->
+
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms">
+					<div class="col-lg-12">
+
+						<!-- Footer Social Links -->
+
+						<!--/. End Footer Social Links -->
+
+						<!-- copyright -->
+						<div class="copyright text-center">
+							<a href="index.html">
+								<!-- <img src="images/logo-meghna.png" alt="Meghna" />  -->
+								<svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		                            <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
+		                                <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+		                                <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+		                                <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+		                            </g>
+		                        </g>
+		                    </svg>
+							</a>
+							<br />
+
+							<p>Design And Developed by software project group 10, OUC</p>
+						</div>
+						<!-- /copyright -->
+
+					</div> <!-- end col lg 12 -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</footer> <!-- end footer -->
+
+
+
+		<!--
+		Essential Scripts
+		=====================================-->
+
+		<!-- Main jQuery -->
+		<script type="text/javascript" src="/static/plugins/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/plugins/jquery/jquery.cookie.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script type="text/javascript" src="/static/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Slick Carousel -->
+		<script type="text/javascript" src="/static/plugins/slick-carousel/slick/slick.min.js"></script>
+		<!-- Portfolio Filtering -->
+		<script type="text/javascript" src="/static/plugins/mixitup/dist/mixitup.min.js"></script>
+		<!-- Smooth Scroll -->
+		<script type="text/javascript" src="/static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+		<!-- Magnific popup -->
+		<script type="text/javascript" src="/static/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<!-- Google Map API -->
+
+		<!-- Sticky Nav -->
+		<script type="text/javascript" src="/static/plugins/Sticky/jquery.sticky.js"></script>
+		<!-- Number Counter Script -->
+		<script type="text/javascript" src="/static/plugins/count-to/jquery.countTo.js"></script>
+		<!-- wow.min Script -->
+		<script type="text/javascript" src="/static/plugins/wow/dist/wow.min.js"></script>
+		<!-- Custom js -->
+		<script type="text/javascript" src="/static/js/get_face.js"></script>
+</body>
+</html>
